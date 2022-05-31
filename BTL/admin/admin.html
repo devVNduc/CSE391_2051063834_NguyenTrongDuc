@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col c-12 button">
+                <div style="margin: 30px 35px;">
+                    <a class="home" href="/home.html">Home</a>
+                </div>
+                <div>
+                    <button id="toggle" class="btn" type="button" onclick="">Add new</button>
+                </div>
+                <h1>LIST New Film</h1>
+            </div>
+        </div>
+        <!--thêm  -->
+        <div class="row">
+            <div class="col c-12">
+                <form class="none" id="formAdd" action="">
+                    <table style="width: 350px ; height: 460px; margin : auto;">
+                        <tr>
+                            <td class="df">
+                                <label for="">Full Name</label>
+                            </td>
+                            <td class="df">
+                                <input class="fullName" type="text" id="name" name="fullname" required>
+                                <span id="statusOfName"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Release Date</label>
+                                
+                            </td>
+                            <td class="df">
+                                <input class="releaseDate" type="text" name="Release Date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Type</label>
+                            </td>
+                            <td class="df">
+                                <input class="type" type="" name="Type">
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Country</label>
+                                
+                            </td>
+                            <td class="df">
+                                <input class="country" id="mail" type="text" name="Country">
+                                <span id="statusOfEmail"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Director</label>
+                                
+                            </td>
+                            <td class="df">
+                                
+                                <input class="director" type="text" name="Director">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Resolution</label>
+                                
+                            </td>
+                            <td class="df">
+                                
+                                <input class="resolution" type="text" name="Resolution">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Link Film</label>
+
+                            </td>
+                            <td class="df">
+                                
+                                <input class="linkFilm" type="text" name="Link Film">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 8px 0;">
+                                <button id="add" style="width: 100px;" type="button">Add</button>
+                                <button id="edit" onclick="changing()" style="width: 100px;" type="button"
+                                disabled>Edit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>       
+        <!-- bảng -->
+        <div class="row">
+            <div class="col c-12">
+                <table class="table">
+                    <thead>
+                        <tr style="color: #f0760c; font-size: 20px; padding : 10px 0">
+                            <td>ID</td>
+                            <td>Full Name</td>
+                            <td>Release Date</td>
+                            <td>Type</td>
+                            <td>Country</td>
+                            <td>Director</td>
+                            <td>Resolution</td>
+                            <td>Link Film</td>
+                        </tr>
+                    </thead>
+                    <tbody id="list">
+                        <!-- render js -->
+                    </tbody>
+                        </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./admin.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script> -->
+</html>
