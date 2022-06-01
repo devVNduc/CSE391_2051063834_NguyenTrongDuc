@@ -5,6 +5,13 @@ html{
     height: 68px;
     background-color: black;
     display: flex;
+    display: space-between;
+}
+#header-nav-right{
+    display: flex;
+}
+#header-nav-left{
+    display: flex;
 }
 #nav li{
     display: inline-block;
@@ -37,4 +44,19 @@ html{
     100% {
         background-position-x: 380px;
     }
+}
+#nav-search {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#nav-search .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 68px;
+    right: 0;
+    
+}
+.header-nav-left {
+    flex: 1;
+    justify-content: flex-end;
 }
