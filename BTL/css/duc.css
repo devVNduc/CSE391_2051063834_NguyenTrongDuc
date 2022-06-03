@@ -142,3 +142,33 @@ svg{
       stroke-width: 5px;
       stroke: #55E6C1;
   }
+  #search-box {
+      border: 1px solid #fff;
+      width: 200px;
+      height: 40px;
+      display: flex;
+      margin: 13px 0px;
+      align-items: center;
+  }
+
+  .search_text {
+      border: none;
+      outline: none;
+      padding: 3px 6px;
+      background-color: transparent;
+      color: #fff;
+      flex: 1;
+  }
+
+  .search_btn {
+      border: none;
+      background-color: transparent;
+      color: #fff; 
+      cursor: pointer;
+      height: 100%;
+      width: 40px;
+  }
+
+  .search_icon {
+      font-size: 20px;
+  }
