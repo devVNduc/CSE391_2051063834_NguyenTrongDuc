@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../image/duc_img">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/themify-icons/themify-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="HomePage">
@@ -63,21 +66,82 @@
               </div>
              </div>
             <div class="header-nav-left">
-                <div id="nav-infor">
+                  <div id="nav-infor">
                     <i class="bell-icon fa-solid fa-bell"></i>
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                    <div id="search-box">
-                      <button class="search_btn">
+                    <div class="wrapper">
+                      <div class="search-box">
+                        <input type="text" placeholder="Phim, diễn viên, thể loại,..." class="input">
+                        <div class="btn">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!-- <div class="search-box js-SearchBox">
+                      <button class="search_btn-Inbox js-SearchBtnInbox">
                         <i class="fas fa-search search_icon"></i>
                       </button>
-                      <input class="search_text" placeholder="Phim ,diễn viên ,thể loại..." type="text" />
-                    </div>
-                </div>
-            </div>
+                    </div> 
+                    <div class="search-text js-searchText"> 
+                      <input class="header-input" placeholder="Phim ,diễn viên ,thể loại..." style="color: black;" type="text" />
+                    </div> -->
+                  
+            
             </div>
           </div>
         </div>
 
-    </div>
+   </div>
+    <script>
+     $(".btn").click(function () {
+        $(".input").toggleClass("active").focus;
+        $(this).toggleClass("animate");
+        $(".input").val("");
+      });
+
+
+
+
+
+
+
+
+        // const searchText = document.querySelector('search_text')
+        // const SearchBtnOutbox = document.querySelector('.js-SearchBtnOutbox') 
+        // const SearchBtnInbox = document.querySelector('.js-SearchBtnInbox')
+        // const SearchBtnClose = document.querySelector('.js-SearchBtn-close')
+        // const SearchBox = document.querySelector('.js-SearchBox')
+        // const SearchText = document.querySelector('.js-searchText') 
+        //   function showSearchBox() {
+        //     SearchBox.classList.add('open')
+        //   }
+        //   function showSearchText() {
+        //     SearchText.classList.add('open')
+        //   }
+        //   function hidenSearchBtnOutbox() {
+        //     SearchBtnClose.classList.add('close')
+        //   }
+        //   function hidenSearchBox() {
+        //     SearchBox.classList.remove('open')
+        //   }
+        //   function showSearchBtnOutbox() {
+        //     SearchBtnClose.classList.remove('close')
+        //   }
+        //   SearchBtnOutbox.addEventListener('click',showSearchBox,showSearchText)
+        //   SearchBtnInbox.addEventListener('click',showSearchBox)
+        //   SearchBtnClose.addEventListener('click', hidenSearchBtnOutbox)
+        //   SearchBtnInbox.addEventListener('click', hidenSearchBox)
+    
+    
+    
+    </script>
 </body>
 </html>
