@@ -52,7 +52,6 @@ html{
 #nav-infor {
     position: relative;
     height: 68px;
-    display: flex;
     flex-direction: row-reverse;
 }
 #nav-infor .bell-icon
@@ -68,6 +67,7 @@ html{
     color: greenyellow;
 }
 .header-nav-left {
+    display: flex;
     flex: 1;
     justify-content: flex-end;
 }
@@ -94,7 +94,6 @@ html{
     37% { -webkit-transform: rotateZ(2deg); }
     39% { -webkit-transform: rotateZ(-1deg); }
     41% { -webkit-transform: rotateZ(1deg); }
-  
     43% { -webkit-transform: rotateZ(0); }
 }
 #header-nav{
@@ -168,8 +167,9 @@ body {
     font-size: 18px;
     border-radius: 50px;
     color: #29313a;
-    border: 3px solid #62d474;
+    border: 3px solid #ED4C67;
     transition: all 0.8s ease;
+    margin-right: 22px;
 }
 
 ::-webkit-input-placeholder {
@@ -177,12 +177,13 @@ body {
     color: #62d474;
 }
 .btn {
+    margin-right: 20px;
     margin-top: 19px;
     right: 0%;
     position: absolute;
     width: 30px;
     height: 30px;
-    background: #62d474;
+    background: #ED4C67;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
