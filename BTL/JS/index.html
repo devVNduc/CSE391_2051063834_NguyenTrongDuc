@@ -23,7 +23,7 @@
                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                    <rect id="shape" height="40" width="150" />
                    <div id="text">
-                     <a href="">Action</a>
+                     <a style="padding: 12px 46px ;" href="">Action</a>
                    </div>
                  </svg>
                </div>
@@ -32,7 +32,7 @@
                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                    <rect id="shape" height="40" width="150" />
                    <div id="text">
-                     <a href="">Horror</a>
+                     <a style="padding: 12px 45px ;" href="">Horror</a>
                    </div>
                  </svg>
                </div>
@@ -41,7 +41,7 @@
                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                    <rect id="shape" height="40" width="150" />
                    <div id="text">
-                     <a href="">Science Fiction</a>
+                     <a style="padding: 12px 40px;" href="">Science</a>
                    </div>
                  </svg>
                </div>
@@ -50,7 +50,7 @@
                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                    <rect id="shape" height="40" width="150" />
                    <div id="text">
-                     <a href="">Romance</a>
+                     <a style="padding: 12px 33px ;" href="">Romance</a>
                    </div>
                  </svg>
                </div>
@@ -58,7 +58,7 @@
                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                    <rect id="shape" height="40" width="150" />
                    <div id="text">
-                     <a href="">War</a>
+                     <a style="padding: 12px 58px ;" href="">War</a>
                    </div>
                  </svg>
                </div>
@@ -75,26 +75,77 @@
                           </div>
                         </div>
                       </div>
-                      <i class="bell-icon fa-solid fa-bell"></i>
+                      <div class="nav-dropdown">
+                          <i class="bell-icon fa-solid fa-bell"></i>
+                        <div class="infor_dropdown">
+                          <table class="table-infor-dropdown">
+                            <tbody>
+                              <tr>
+                                <td class="image-infor-dropdown">
+                                  <img src="../image/duc_img/phim-hanh-phuc-chung-cu-co-doc-happiness-5.jpeg" alt="" width="108px" height="100px" style="border-radius: 5%;">
+                                </td>
+                                <td class="NameFilm-infor-dropdown">
+                                    <a href="#">
+                                      <h1 style="font-size: 20px;">Chung cư cô độc</h1> <br>
+                                      Khởi chiếu:30/6/2022
+                                    </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="image-infor-dropdown">
+                                  <img src="../image/duc_img/png-clipart-harry-potter-harry-potter-illustration.png" alt="" width="108px" height="100px"
+                                    style="border-radius: 5%;">
+                                </td>
+                                <td class="NameFilm-infor-dropdown">
+                                  <a href="#">
+                                    <h1 style="font-size: 20px;">Harry Potter</h1> <br>
+                                    Khởi chiếu:15/6/2022
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="image-infor-dropdown">
+                                  <img src="../image/duc_img/phi-vu-the-ky-200.png" alt="" width="108px"
+                                    height="100px" style="border-radius: 5%;">
+                                </td>
+                                <td class="NameFilm-infor-dropdown">
+                                  <a href="#">
+                                    <h1 style="font-size: 20px;">Phi vụ thế kỷ</h1> <br>
+                                    Khởi chiếu:10/6/2022
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="image-infor-dropdown">
+                                  <img src="../image/duc_img/Lightyear-1.jpg" alt="" width="108px" height="100px" style="border-radius: 5%;">
+                                </td>
+                                <td class="NameFilm-infor-dropdown">
+                                  <a href="#">
+                                    <h1 style="font-size: 20px;">CẢNH SÁT VŨ TRỤ LIGHTYEAR </h1> <br>
+                                    Khởi chiếu:17/6/2022
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="image-infor-dropdown">
+                                  <img src="../image/duc_img/lanh-song-lung-khi-xem-trailer-phim-dien-thoai-den-9b9-6096065.png" alt="" width="108px" height="100px" style="border-radius: 5%;">
+                                </td>
+                                <td class="NameFilm-infor-dropdown">
+                                  <a href="#">
+                                    <h1 style="font-size: 20px;">ĐIỆN THOẠI ĐEN </h1> <br>
+                                    Khởi chiếu:24/6/2022
+                                  </a>
+                                </td>
+                              </tr>
+
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      
                     </div>  
               </div> 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!-- <div class="search-box js-SearchBox">
-                      <button class="search_btn-Inbox js-SearchBtnInbox">
-                        <i class="fas fa-search search_icon"></i>
-                      </button>
-                    </div> 
-                    <div class="search-text js-searchText"> 
-                      <input class="header-input" placeholder="Phim ,diễn viên ,thể loại..." style="color: black;" type="text" />
-                    </div> -->
-                  
-            
             </div>
           </div>
         </div>
@@ -102,46 +153,10 @@
    </div>
     <script>
      $(".btn").click(function () {
-        $(".input").toggleClass("active").focus;
+        $(".input").toggleClass("active");
         $(this).toggleClass("animate");
-        $(".input").val("");
+        $(".input").val(""); /*reset lại ô tìm kiếm trả về giá trị 0 mặc định */
       });
-
-
-
-
-
-
-
-
-        // const searchText = document.querySelector('search_text')
-        // const SearchBtnOutbox = document.querySelector('.js-SearchBtnOutbox') 
-        // const SearchBtnInbox = document.querySelector('.js-SearchBtnInbox')
-        // const SearchBtnClose = document.querySelector('.js-SearchBtn-close')
-        // const SearchBox = document.querySelector('.js-SearchBox')
-        // const SearchText = document.querySelector('.js-searchText') 
-        //   function showSearchBox() {
-        //     SearchBox.classList.add('open')
-        //   }
-        //   function showSearchText() {
-        //     SearchText.classList.add('open')
-        //   }
-        //   function hidenSearchBtnOutbox() {
-        //     SearchBtnClose.classList.add('close')
-        //   }
-        //   function hidenSearchBox() {
-        //     SearchBox.classList.remove('open')
-        //   }
-        //   function showSearchBtnOutbox() {
-        //     SearchBtnClose.classList.remove('close')
-        //   }
-        //   SearchBtnOutbox.addEventListener('click',showSearchBox,showSearchText)
-        //   SearchBtnInbox.addEventListener('click',showSearchBox)
-        //   SearchBtnClose.addEventListener('click', hidenSearchBtnOutbox)
-        //   SearchBtnInbox.addEventListener('click', hidenSearchBox)
-    
-    
-    
     </script>
 </body>
 </html>
