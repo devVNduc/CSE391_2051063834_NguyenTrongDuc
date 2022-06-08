@@ -33,7 +33,6 @@ html{
     z-index: 1;
 }
 
-
 .login-header a{
     font-size: 5rem;
     font-weight: 700;
@@ -97,6 +96,7 @@ html{
     border: 0px;
     margin: 40px 0 14px;
     font-weight: 700;
+    cursor: pointer; 
 }
 
 .login-form-help{
@@ -125,24 +125,6 @@ html{
 
 .login-form-other{
     margin-top: 60px;
-}
-
-.login-fb{
-    text-decoration: none;
-}
-
-.login-fb-icon{
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-}
-
-.login-fb-text{
-    font-size: 1.3rem;
-    color: #737373;
-    font-weight: 500;
-    position: relative;
-    bottom: 6px;
 }
 
 .login-form-signupnow
