@@ -177,36 +177,36 @@
     </header>
     <div class="topic-container">
       <div class="box">
-          <img src="../image/duc_img/saostar-4wv46tqkg8hd91w7.jpg">
-          <button class="btn-playing">Watch Trailer</button>
+          <img class="image-box1"  src="../image/duc_img/saostar-4wv46tqkg8hd91w7.jpg">
+          
         </img>
         <span>Action</span>
       </div>
       <div class="box">
-        <img src="../image/duc_img/0374b9118087403.6081f97ce3eee.png">
+        <img class="image-box"  src="../image/duc_img/0374b9118087403.6081f97ce3eee.png">
         
-         <button class="btn-playing">Watch Trailer</button>
+         
        
         <span>Horror</span>
       </div>
       <div class="box">
-        <img src="../image/duc_img/matrix-trilogy-1-15663808260312040728612.webp">
+        <img class="image-box"  src="../image/duc_img/matrix-trilogy-1-15663808260312040728612.webp">
         
-         <button class="btn-playing">Watch Trailer</button>
+         
        
         <span>Science</span>
       </div>
       <div class="box">
-        <img src="../image/duc_img/phim-tinh-yeu-lang-man-The-Notebook.jpg">
+        <img class="image-box"  src="../image/duc_img/phim-tinh-yeu-lang-man-The-Notebook.jpg">
         
-         <button class="btn-playing">Watch Trailer</button>
+         
        
         <span>Romance</span>
       </div>
       <div class="box">
-        <img src="../image/duc_img/nhung-bo-phim-hay-nhat-ve-chien-tranh-the-gioi-thu-2-Saving-Private-Ryan.jpg">
+        <img class="image-box"  src="../image/duc_img/nhung-bo-phim-hay-nhat-ve-chien-tranh-the-gioi-thu-2-Saving-Private-Ryan.jpg">
         
-         <button class="btn-playing">Watch Trailer</button>
+         
        
         <span>War</span>
       </div>
@@ -222,6 +222,11 @@
       $(this).toggleClass("animate");
       $(".input").val(""); /*reset lại ô tìm kiếm trả về giá trị 0 mặc định */
     });
+    //bo anh khi hover
+    for(var i=0;i < $(".image-box").length; i++){
+      $(".image-box").eq(i).hover(function(){
+        $(".image-box").eq(i).toggleClass("image-none");
+      })};
   </script>
 </body>
 
