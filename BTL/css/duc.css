@@ -3,19 +3,25 @@
 }
 body{
     max-width: 2048px;
+    background-color: rgba(0, 0,0,1) !important;
 }
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 #header{
     top: 0;
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     z-index: 10;
     height: 68px;
-    background-color: black;
     display: flex;
     display: space-between;
+    transition: all 1s;
+}
+.header-black{
+    background-color: black !important ;
 }
 #header-nav-right{
     display: flex;
@@ -277,7 +283,6 @@ body {
 }
 /* topic */
 .topic-header{
-    margin-top: 68px;
     z-index: 1;
     height: 950px;
     background-image: url("../image/duc_img/xemphim.jpg");
@@ -346,7 +351,7 @@ body {
     }
 }
 /*topic-header-node1*/
-.topic-header-node1 .topic-header-title{
+.topic-header-title{
     position: relative;
     display: inline-block;
     left: 65%;
@@ -361,6 +366,7 @@ body {
     margin: 0px;
     padding: 1em;
     vertical-align: baseline;
+    text-align: center;
 }
 
 /*  */
@@ -412,3 +418,117 @@ body {
     transition: 0.5s;
     display: none;
 }
+/* LIST film */
+.slick-initialized{
+    height: 250px;
+    margin: 20px 0px;
+}
+
+.slick-list img{
+    display: flex;
+    object-fit: fill !important;
+    margin: 10px 15px;
+    width: 300px;
+    height: 450px;
+}
+.slick-prev{
+    display: none !important;
+    /* margin-top: 8px;
+    z-index: 2;
+    position: absolute;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; */
+}
+.slick-next{
+    display: none !important;
+    /* position: absolute;
+    height: 250px;
+    width: 65px;
+    right: 100px;
+    right: 0;
+    bottom: -10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;  */
+}
+/* .slick-list img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+} */
+.topic-list-title{
+    margin-top: 300px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(40deg#4caf5014,#ffeb3b17) ;
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #fff;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    padding: 1em;
+    vertical-align: baseline;
+    text-align: center;
+}
+.first-topic-list-title{
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(40deg#4caf5014,#ffeb3b17) ;
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #fff;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    padding: 1em;
+    vertical-align: baseline;
+    text-align: center;
+}
+/*  */
+.main-container {
+
+  width: 1000px;
+  padding: 50px;
+  margin-top: 400px;
+  margin-left: 500px;
+  margin-right: 100px;
+}
+.main-container_logos{
+    margin-bottom: 40px;
+}
+
+.main-container_links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-container_links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container_links a:hover {
+  color: red;
+}
+
+.main-container_logos a{
+  padding: 10px;
+}
+.main-container_logos a i:hover{
+    color: red;
+}
+
+.main-container_logo{
+  color: #fff;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+} 
