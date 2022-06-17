@@ -213,6 +213,41 @@ body {
     width: 300px;
     right: 10px;
 }
+@media(max-width: 1365px){
+    
+.input.active {
+    width: 200px;
+    right: 10px;
+}
+.topic-container {
+  display: flex;
+  width: 100%;
+  padding: 2% 2%;
+  box-sizing: border-box;
+}
+.box > img {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 17%);
+  object-fit: cover;
+
+}
+
+.box > span {
+  color: bisque;
+  background-color: teal;
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 20%;
+  line-height: 2.6;
+  margin-top: 410px;
+  width: 120%;
+}
+
+    
+
+}
 
 .btn.animate {
     transform: rotate(-360deg);
@@ -486,11 +521,11 @@ body {
 /*  */
 .main-container {
 
-  width: 1000px;
+  width: 60%;
   padding: 50px;
   margin-top: 400px;
-  margin-left: 500px;
-  margin-right: 100px;
+  margin-left: 27%;
+  /* margin-right: 100px; */
 }
 .main-container_logos{
     margin-bottom: 40px;
