@@ -217,7 +217,7 @@ body {
     width: 300px;
     right: 10px;
 }
-@media(max-width: 1364px){
+@media(min-width: 1364px){
     
 .input.active {
     width: 200px;
