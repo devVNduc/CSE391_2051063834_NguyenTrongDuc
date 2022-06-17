@@ -1,0 +1,22 @@
+@media(max-width: 1367px){
+    
+.input.active {
+    width: 200px;
+    right: 10px;
+}
+.topic-container {
+  display: flex;
+  width: 100%;
+  padding: 2% 2%;
+  box-sizing: border-box;
+}
+.box > img {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 17%);
+  object-fit: cover;
+}
+
+
+}
+@media(min-width: 1920px) and (max-width: 2560px) {}
