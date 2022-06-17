@@ -217,7 +217,7 @@ body {
     width: 300px;
     right: 10px;
 }
-@media(max-width: 1365px){
+@media(max-width: 1364px){
     
 .input.active {
     width: 200px;
@@ -248,9 +248,6 @@ body {
   margin-top: 410px;
   width: 120%;
 }
-
-    
-
 }
 
 .btn.animate {
