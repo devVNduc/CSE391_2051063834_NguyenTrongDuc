@@ -403,7 +403,7 @@
     .box > img {
       position: absolute;
       width: 100%;
-      height: calc(100% - 10vh);
+      height: calc(100% - 22%);
       object-fit: cover;
     
     }
@@ -414,7 +414,7 @@
       font-size: 3.8vh;
       display: block;
       text-align: center;
-      height: 10vh;
+      height: 20%;
       line-height: 2.6;
       margin-top: 410px;
     }
