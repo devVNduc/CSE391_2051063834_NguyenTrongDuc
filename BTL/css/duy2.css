@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+html{
+    font-size: 10px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+.container{
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.header{
+    background-color: black;
+    padding:20px 60px ;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    padding-top: 20rem;
+}
+.chose-profile{
+    align-items: center;
+}
+.profile-link{
+    background-image: url(/BTL/image/duy_img/logo-netflix.png);
+}
