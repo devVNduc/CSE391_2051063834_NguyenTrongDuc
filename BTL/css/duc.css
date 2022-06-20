@@ -486,10 +486,10 @@ body {
 /*  */
 .main-container {
 
-  width: 1000px;
+  width: 60%;
   padding: 50px;
   margin-top: 400px;
-  margin-left: 500px;
+  margin-left: 27%;
   margin-right: 100px;
 }
 .main-container_logos{
