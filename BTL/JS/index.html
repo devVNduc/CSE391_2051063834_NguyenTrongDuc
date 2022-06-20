@@ -375,8 +375,8 @@
         <p>Carlos Avila & copy 2022</p>
       </footer>
   </div>
-  <div class="quickTurn-home">
-    <a class="btn-quickTurn-home" href="#"><i class="ti-arrow-up"></i></a>
+  <div id="quickTurn-home">
+    <a class="btn-quickTurn-home" href="#"><i class="fa-solid fa-angles-up"></i></a>
   </div>
 </div>
 </div>
@@ -409,9 +409,9 @@
         }
       
     });
-    const btnQuickScroll = document.getElementsByClassName('quickTurn-home');
+    const btnQuickScroll = document.getElementById('quickTurn-home');
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 1000) {
           btnQuickScroll.classList.add('show-btn-quickTurn-home')
         } else {
           btnQuickScroll.classList.remove('show-btn-quickTurn-home')

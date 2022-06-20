@@ -548,7 +548,7 @@
       color: #fff;
       margin: 10px;
     }
-    .quickTurn-home {
+    #quickTurn-home {
         position: sticky;
         bottom: 1%;
         margin: 20px 50%;
@@ -558,15 +558,21 @@
         border-radius: 50%;  
         display: none;
 }
-.btn-quickTurn-home{
+#quickTurn-home:hover{
+    opacity: 0.8;
+}
+.btn-quickTurn-home i{
     display: block;
     color: #fff;
     font-size: 20px;
     text-align: center;
     top: 20px;
+    height: 40px;
+    margin-top: 9px;
+    text-decoration: none;
     
 }
 .show-btn-quickTurn-home{
-    display: inline-block;
+    display: inline-block !important;
 }
 
