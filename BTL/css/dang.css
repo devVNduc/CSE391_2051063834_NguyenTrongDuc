@@ -24,7 +24,8 @@
     margin-left: 20px;
 }
 
-.login {
+.login, .logout {
+    display: none;
     height: 90px;
     line-height: 90px;
     padding-right: 5%;
@@ -32,14 +33,22 @@
 
 }
 
-.login a {
+.login a, .logout a {
     text-decoration: none;
     color: #000;   
 }
 
-.login:hover {
+.login:hover, .logout:hover {
     text-decoration: underline;
 }
+
+.login.active, .logout.active {
+    display: flex;
+}
+
+
+
+/* .part1 */
 
 .part-1 {
     display: none;
@@ -150,6 +159,9 @@
     position: relative;
 }
 
+.centerContainer2 .sub-input {
+    top: 31px;
+}
 .input {
     width: 100%;
     padding: 20px 0;
@@ -158,10 +170,14 @@
     padding-left: 8px;
     font-size: 16px;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .sub-input {
     position: absolute;
-    top: 28px;
+    top: 22px;
     left: 10px;
     font-size: 16px;
     color: #777;
@@ -169,7 +185,7 @@
 }
 
 .sub-input.active {
-    transform: translateY(-20px);
+    transform: translateY(-16px);
     font-size: 12px;
     font-weight: 600;
 }
@@ -678,7 +694,7 @@ td {
         padding: 10px;
     }
     
-    .login{
+    .login, .logout{
         font-size: 14px;
         line-height: 46px;
     }

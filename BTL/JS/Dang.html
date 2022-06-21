@@ -11,9 +11,13 @@
 <body>
     <div class="header-wrap">
         <div class="logo">  
+            <a href="Toan.html"></a>
         </div>
-        <div class="login">
-            <b><a href="">Đăng nhập</a></b>
+        <div class="login active">
+            <b><a href="Duy.html">Đăng nhập</a></b>
+        </div>
+        <div class="logout">
+            <b><a href="">Đăng xuất</a></b>
         </div>
     </div>
     <div class="part-1 active">
@@ -51,7 +55,7 @@
                 </div>
 
                 <div class="wrap-input">
-                    <input class="input" type="text">
+                    <input class="input" type="password">
                     <p class="sub-input">Thêm mật khẩu</p>
                 </div>
             </div>
@@ -232,7 +236,7 @@
                 <p class="sub-input">Họ</p>
             </div>
             <div class="wrap-input">
-                <input class="input" type="text">
+                <input class="input" type="number">
                 <p class="sub-input">Số thẻ</p>
             </div>
             <div class="wrap-input">
@@ -264,7 +268,7 @@
             <p class="p-6">Hãy nhập số điện thoại di động MoMoPay của bạn.</p>            
             <p class="p-6">Chúng tôi cũng sẽ dùng số điện thoại của bạn nếu bạn quên mật khẩu, cũng như để gửi các tin nhắn quan trọng về tài khoản. Bạn có thể phải trả phí tin nhắn SMS.</p>
             <div class="wrap-input">
-                <input class="input input-6" type="text">
+                <input class="input input-6" type="number">
                 <p class="country"> <img src="/Nhom14_WEB_BTL/BTL/image/dang_img/VietNam.png"> +84</p>
                 <p class="sub-input">Số điện thoại di động</p>
             </div>
@@ -286,7 +290,7 @@
             <h2>Chúc bạn có những phút giây xem phim vui vẻ.</h2>
             <br>
             <br>
-            <a href="">Về trang chủ</a>
+            <a href="Toan.html">Về trang chủ</a>
         </div>
     </div>
 
@@ -334,7 +338,8 @@
         const btnPart6b = $('.btn-6b')
 
 
-
+        const login = $('.login')
+        const logout = $('.logout')
         const part1 = $('.part-1')
         const part2 = $('.part-2')
         const part3 = $('.part-3')
@@ -356,6 +361,8 @@
         btnPart2.addEventListener('click', function(){
             part2.classList.remove('active')
             part3.classList.add('active')
+            login.classList.remove('active')
+            logout.classList.add('active')
         })
 
         btnPart3.addEventListener('click', function(){
