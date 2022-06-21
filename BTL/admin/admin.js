@@ -45,7 +45,7 @@ var listTv = [
 ];
 
 function render() {
-    let htmls = listTv.map((tv,i) => {
+    let htmls = listTv.map((tv) => {
         return `
         <tr>
                 <td>${tv.id}</td> 
@@ -85,7 +85,7 @@ toggle.addEventListener("click", () => {
         formAdd.classList.add("none");
     }
 });
-//thêm
+// thêm
 inputFullName = document.querySelector(".fullName");
 inputDate = document.querySelector(".releaseDate");
 inputType = document.querySelector(".type");
