@@ -85,38 +85,38 @@ toggle.addEventListener("click", () => {
         formAdd.classList.add("none");
     }
 });
-//thêm
-// inputFullName = document.querySelector(".fullName");
-// inputDate = document.querySelector(".releaseDate");
-// inputType = document.querySelector(".type");
-// inputCountry = document.querySelector(".country");
-// inputDirector = document.querySelector(".director");
-// inputResolution = document.querySelector(".resolution");
-// inputLink = document.querySelector(".linkFilm");
-// console.log(inputDate);
-// let add = document.getElementById("add");
+// thêm
+inputFullName = document.querySelector(".fullName");
+inputDate = document.querySelector(".releaseDate");
+inputType = document.querySelector(".type");
+inputCountry = document.querySelector(".country");
+inputDirector = document.querySelector(".director");
+inputResolution = document.querySelector(".resolution");
+inputLink = document.querySelector(".linkFilm");
+console.log(inputDate);
+let add = document.getElementById("add");
 // đk của name
-// let nameOfUser = document.getElementById("name");
-// let nameOfUserRegex =  /^\d+$/; //số
+let nameOfUser = document.getElementById("name");
+let nameOfUserRegex =  /^\d+$/; //số
 
-// let statusOfName = document.getElementById("statusOfName");
+let statusOfName = document.getElementById("statusOfName");
 
-// nameOfUser.addEventListener("focus", function () {
-//     this.style.border = "1px solid";
-// });
-// nameOfUser.addEventListener("focusout", removeTextName);
-// function removeTextName() {
-//     if (nameOfUserRegex.test(nameOfUser.value) || nameOfUser.value =="") {
-//         statusOfName.textContent = "Full name is not valid";
-//         statusOfName.style.color = "red";
-//         statusOfName.style.fontSize = "15px";
+nameOfUser.addEventListener("focus", function () {
+    this.style.border = "1px solid";
+});
+nameOfUser.addEventListener("focusout", removeTextName);
+function removeTextName() {
+    if (nameOfUserRegex.test(nameOfUser.value) || nameOfUser.value =="") {
+        statusOfName.textContent = "Full name is not valid";
+        statusOfName.style.color = "red";
+        statusOfName.style.fontSize = "15px";
        
-//     } else {
-//         statusOfName.textContent = "Full name is valid";
-//         statusOfName.style.color = "blue";
-//         statusOfName.style.fontSize = "15px";
-//     }
-// }
+    } else {
+        statusOfName.textContent = "Full name is valid";
+        statusOfName.style.color = "blue";
+        statusOfName.style.fontSize = "15px";
+    }
+}
 function checkValue() {
 
     if (nameOfUserRegex.test(nameOfUser.value)) {
