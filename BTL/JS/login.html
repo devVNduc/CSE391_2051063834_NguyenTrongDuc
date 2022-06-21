@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/BTL/css/login.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <a href="/">Netflix</a>
+        </div>
+        <div class="login-body">
+            <div class="login-form-container">
+                <div class="login-form-header">
+                    <h4 id="login-title">
+                       Sign In
+                    </h4>
+                </div>
+
+                <div id="login-form" action="" >
+                    <input type="text" class="login-form-input" id="username" placeholder="Email or phone number">
+                    <div class="pw">
+                        <input type="password" class="login-form-input" id="password" placeholder="Password"  required>
+                        <span class="show-btn">SHOW</span>
+                    </div>
+                    <button type="submit" id="submit" class="login-form-button">Sign In</button>
+                    <div class="login-form-help">
+                        <div class="login-form-rememberMe">
+                            <input type="checkbox" class="remberMe-cbx" id="checkbox_id">
+                            <label class="remember-lbl" for="checkbox_id">Remember me</label>
+                        </div>
+                        <a class="help-link" href="/">Need help?</a>
+                    </div>
+                </div>
+
+                <div class="login-form-other">
+                    <div class="login-form-signupnow">
+                        New to Netflix?
+                        <a href="/" class="login-form-signupnow-link">Sign up now.</a>
+                    </div>
+
+                    <div class="login-term">
+                        <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                        <a href="">Learn more.</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="login-overlay">
+        </div>
+        <div class="login-footer">
+            <div class="site-footer">
+                <table >
+                    <th class="header-footer" colspan="4"><a href="">Questions? Contact us.</a></th>
+                    <tr class="">
+                        <th class="footer-link"><a href="">FAQ</a></th>
+                        <th class="footer-link"><a href="">Help Center</a></th>
+                        <th class="footer-link"><a href="">Terms of Use</a></th>
+                        <th class="footer-link"><a href="">Privacy</a></th>
+                    </tr>
+                    <tr>
+                        <th class="footer-link"><a href="">Cookie Preferences</a></th>
+                        <th class="footer-link"><a href="">Corporate Information</a></th>
+                    </tr>
+                </table>    
+            </div>
+        </div>
+    </div>
+<script>
+
+        // Phần thay đổi ngôn ngữ
+    $(document).ready(function(){
+        $(".selected").click(function(){
+            $(".select-box ul").addClass("active")
+        });
+        $(".select-box ul").click(function(){
+            alert($(this).text());
+        });
+    });
+</script>
+</body>
+</html>
+
+<script>
+        //Phần hiện ẩn mật khẩu
+    const passField = document.querySelector(".pw input");
+    const showBtn = document.querySelector(".pw span");
+       showBtn.onclick = (()=>{
+         if(passField.type === "password"){
+           passField.type = "text";
+           showBtn.classList.add("hide-btn");
+
+         }else{
+           passField.type = "password";
+           showBtn.classList.remove("hide-btn");
+         }
+       });
+</script>
+
+<script>
+    // Đăng nhập
+    const username = document.querySelector('#username');
+    const password = document.querySelector('#password');
+    const submit = document.querySelector('#submit');
+    submit.addEventListener('click', function () {
+    if (username.value == '1' && password.value == '1') {
+      window.location.href="chooseProfile.html"
+    } else {
+            alert('Sai mật khẩu')
+        }
+    }
+)
+</script>
