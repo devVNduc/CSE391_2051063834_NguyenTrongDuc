@@ -81,13 +81,14 @@
     margin-top: 0.5%;
     outline: none;
 }
-.showcase .get-started-container button{
+.showcase .get-started-container a{
     padding: 22px;
     border: none;
     background-color: #e50914;
     color: white;
     margin-left: -0.3%;
     font-weight: bold;
+    text-decoration: none;
 }
 /*HEADER SECTION ENDS*/
 
@@ -261,13 +262,14 @@
     margin-top: 0.5%;
     outline: none;
 }
-.email-address-container button{
+.email-address-container a{
     padding: 22px;
     border: none;
     background-color: #e50914;
     color: white;
     margin-left: -0.3%;
     font-weight: bold;
+    text-decoration: none;
 }
 /*EMAIL ADDRESS ENDS*/
 
