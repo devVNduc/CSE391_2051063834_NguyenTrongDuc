@@ -39,6 +39,7 @@
     float: right;
     position: relative;
     right: 55px;
+    text-decoration: none;
 }
 .showcase-top select{
     background-color: transparent;
