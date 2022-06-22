@@ -52,7 +52,7 @@ a {
     height: 80%;
     text-decoration: none;
     width: 80%;
-    font-size: 20px;
+    font-size: 15px;
     color: #737373;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ a {
     .profile a{
         height: 100%;
         width:100%;
-        font-size: 10px;;
+        font-size: 12px;;
     }
     .btn-manageProfile{
         width:150px;
@@ -118,7 +118,7 @@ a {
     .profile a{
         height:100%;
         width:100%;
-        font-size: 6px;
+        font-size: 10px;
     }
     .btn-manageProfile{
         width:100px;

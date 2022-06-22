@@ -177,11 +177,10 @@ html{
     text-decoration: underline;
 }
 
-
 .login-footer{
     width: 100%;
     background-color:  rgba(0,0,0,0.75);
-    height: 300px;
+    height: 250px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -189,7 +188,7 @@ html{
 }
 .login-footer .site-footer{
     margin-left: 20%;
-    margin-right: 14%;
+
     padding: 30px 0;
     color:#737373
 }
@@ -207,9 +206,15 @@ html{
     color:#737373
 }
 .footer-link{
-    width: 350px;
+    width: 400px;
     font-size:15px;
     color:#737373
+}
+.site-footer table tr{
+    padding-bottom: 20px;
+}
+.site-footer table th,tr{
+    white-space: nowrap;
 }
 
 
@@ -239,5 +244,12 @@ html{
         z-index: 3;
         top:745px;
     }
-    .
+    .login-footer .site-footer{
+        margin:0;
+        padding-left:2%;
+        padding-right: 2%;
+    }
+    .footer-link{
+        width: calc(100% / 2)- 20px ;
+    }
 }
